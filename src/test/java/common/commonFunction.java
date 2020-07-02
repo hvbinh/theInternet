@@ -14,16 +14,19 @@ public class commonFunction {
     }
     public static void openBrowsers(String browserName)
     {
+
         switch (browserName.toLowerCase())
         {
             case "chrome":
             {
+                System.setProperty("webdriver.chrome.driver","src/test/java/browsers/chromedriver.exe");
                 driver = new ChromeDriver();
                 driver.manage().window().maximize();
                 break;
             }
             case "firefox":
             {
+                System.setProperty("webdriver.gecko.driver","src/test/java/browsers/geckodriver.exe");
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
                 break;
@@ -42,6 +45,15 @@ public class commonFunction {
     {
         return driver.findElement(by.buildBy(locator));
     }
+    public static void click(How by, String locator)
+    {
+        getElement(by, locator).click();
+    }
+    public static void backPrevious()
+    {
+        driver.navigate().back();
+    }
+
 
 
 }
