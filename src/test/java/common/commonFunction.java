@@ -1,10 +1,14 @@
 package common;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.How;
+
+import java.util.List;
 
 public class commonFunction {
     static WebDriver driver;
@@ -53,6 +57,34 @@ public class commonFunction {
     {
         driver.navigate().back();
     }
+    public static List<WebElement> imagelist(How by, String locator)
+    {
+        return driver.findElements(by.buildBy(locator));
+    }
+    public static void isImageBroken(WebElement image)
+    {
+        if (image.getAttribute("naturalWidth").equals("0"))
+        {
+            System.out.println(image.getAttribute("outerHTML") + " is broken.");
+        }
+    }
+    public static void waiting(long var) throws InterruptedException {
+        driver.manage().window().wait(var);
+    }
+    public static void rightClick(How by, String locator)
+    {
+        Actions action = new Actions(driver);
+        action.contextClick(getElement(by,locator)).perform();
+    }
+    public static void refreshPage()
+    {
+        driver.navigate().refresh();
+    }
+    public static void navigateHomePage()
+    {
+        driver.navigate().to("https://the-internet.herokuapp.com");
+    }
+
 
 
 
