@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -83,6 +84,16 @@ public class commonFunction {
     public static void navigateHomePage()
     {
         driver.navigate().to("https://the-internet.herokuapp.com");
+    }
+    public static void dragAndDrop(WebElement a, WebElement b)
+    {
+        Actions action = new Actions(driver);
+        action.dragAndDrop(a, b).perform();
+    }
+    public static void dropDownList(String name)
+    {
+        Select sel = new Select(getElement(How.ID, "dropdown"));
+        sel.selectByVisibleText(name);
     }
 
 
