@@ -42,10 +42,21 @@ public class allFunction {
         click(How.XPATH,"//input[@type='checkbox'][2]");
         backPrevious();
 
-        click(How.XPATH,"//a[.='Context Menu']");
-        rightClick(How.ID,"hot-spot");
-        navigateHomePage();
+/*      click(How.XPATH, "//a[.='Context Menu']");
+        rightClick(How.ID, "hot-spot");
+        navigateHomePage();*/
 
+        click(How.XPATH, "//a[.='Digest Authentication']");
+        visit("https://admin:admin@the-internet.herokuapp.com/digest_auth");
+        backPrevious();
+        backPrevious();
+
+        click(How.XPATH, "//a[.='Drag and Drop']");
+        dragAndDrop(getElement(How.ID, "column-a"),getElement(How.ID, "column-b"));
+        backPrevious();
+
+        click(How.XPATH, "//a[.='Dropdown']");
+        dropDownList("Option 2");
 
 
 
