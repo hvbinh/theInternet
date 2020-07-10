@@ -60,7 +60,7 @@ public class allFunction {
         backPrevious();
 
         click(How.XPATH, "//a[.='Dynamic Controls']");
-        // Commit 2
+        // Commit demo 2: blalalsadas
 
 
 
