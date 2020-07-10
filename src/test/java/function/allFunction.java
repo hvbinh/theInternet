@@ -57,6 +57,14 @@ public class allFunction {
 
         click(How.XPATH, "//a[.='Dropdown']");
         dropDownList("Option 2");
+        backPrevious();
+
+        click(How.XPATH, "//a[.='Dynamic Controls']");
+
+        // Commit demo 2: blalalsadas
+
+        // Commit demo 1
+
 
 
 
