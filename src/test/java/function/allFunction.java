@@ -60,7 +60,7 @@ public class allFunction {
         backPrevious();
 
         click(How.XPATH, "//a[.='Dynamic Controls']");
-        // 4
+        // 4 this is branch 1
 
 
 
