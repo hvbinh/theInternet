@@ -62,6 +62,8 @@ public class allFunction {
         click(How.XPATH, "//a[.='Dynamic Controls']");
         // 4 this is branch 2 demo1
 
+        // 4 this is branch 2
+        // demo2
 
 
 
