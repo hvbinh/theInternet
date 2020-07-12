@@ -61,7 +61,9 @@ public class allFunction {
 
         click(How.XPATH, "//a[.='Dynamic Controls']");
 
-        // brand 1
+        // Commit demo 2: blalalsadas brand 2
+
+        // Commit demo 1 demo 2
 
 
 
