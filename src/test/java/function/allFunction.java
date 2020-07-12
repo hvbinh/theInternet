@@ -60,7 +60,9 @@ public class allFunction {
         backPrevious();
 
         click(How.XPATH, "//a[.='Dynamic Controls']");
-        // 4
+
+        // brand 4
+
 
 
 
