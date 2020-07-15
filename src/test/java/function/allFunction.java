@@ -57,7 +57,7 @@ public class allFunction {
 
         click(How.XPATH, "//a[.='Dropdown']");
         dropDownList("Option 2");
-        backPrevious();
+        backPrevious() ;
 */
         click(How.XPATH, "//a[.='Dynamic Loading']");
         click(How.XPATH, "//a[.='Example 2: Element rendered after the fact']");
