@@ -7,9 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class commonFunction {
     static WebDriver driver;
@@ -94,6 +97,14 @@ public class commonFunction {
     {
         Select sel = new Select(getElement(How.ID, "dropdown"));
         sel.selectByVisibleText(name);
+    }
+    public static void waiting(WebElement e) throws InterruptedException {
+        e.click();
+        WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("finish")));
+        backPrevious();
+        backPrevious();
+
     }
 
 
