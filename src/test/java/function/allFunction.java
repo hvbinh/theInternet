@@ -17,7 +17,7 @@ public class allFunction {
         click(How.XPATH,"//a[.='A/B Testing']");
         backPrevious();
 
-        /*click(How.XPATH,"//a[.='Add/Remove Elements']");
+        click(How.XPATH,"//a[.='Add/Remove Elements']");
         click(How.XPATH,"//button[.='Add Element']");
         click(How.XPATH,"//button[.='Add Element']");
         click(How.XPATH,"//button[.='Delete'][1]");
@@ -42,26 +42,31 @@ public class allFunction {
         click(How.XPATH,"//input[@type='checkbox'][2]");
         backPrevious();
 
-*//*      click(How.XPATH, "//a[.='Context Menu']");
+        /*click(How.XPATH, "//a[.='Context Menu']");
         rightClick(How.ID, "hot-spot");
-        navigateHomePage();*//*
-
+        navigateHomePage();
+*/
         click(How.XPATH, "//a[.='Digest Authentication']");
         visit("https://admin:admin@the-internet.herokuapp.com/digest_auth");
         backPrevious();
         backPrevious();
 
-        *//*click(How.XPATH, "//a[.='Drag and Drop']");
+        /*click(How.XPATH, "//a[.='Drag and Drop']");
         dragAndDrop(getElement(How.ID, "column-a"),getElement(How.ID, "column-b"));
-        backPrevious();*//*
+        backPrevious();*/
 
         click(How.XPATH, "//a[.='Dropdown']");
         dropDownList("Option 2");
         backPrevious() ;
-*/
         click(How.XPATH, "//a[.='Dynamic Loading']");
         click(How.XPATH, "//a[.='Example 2: Element rendered after the fact']");
         waiting(getElement(How.XPATH,"//button[.='Start']"));
+
+        click(How.XPATH, "//a[.='Entry Ad']");
+        hardWaiting();
+        click(How.XPATH, "//p[.='Close']");
+        backPrevious();
+
 
 
 

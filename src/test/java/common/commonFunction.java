@@ -106,6 +106,10 @@ public class commonFunction {
         backPrevious();
 
     }
+    public static void hardWaiting()
+    {
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    }
 
 
 
