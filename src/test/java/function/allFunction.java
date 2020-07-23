@@ -62,10 +62,16 @@ public class allFunction {
         click(How.XPATH, "//a[.='Example 2: Element rendered after the fact']");
         waiting(getElement(How.XPATH,"//button[.='Start']"));
 
-        click(How.XPATH, "//a[.='Entry Ad']");
+        /*click(How.XPATH, "//a[.='Entry Ad']");
         hardWaiting();
         click(How.XPATH, "//p[.='Close']");
-        backPrevious();
+        backPrevious();*/
+
+        click(How.XPATH, "//a[.='Forgot Password']");
+
+        
+
+
 
 
 
