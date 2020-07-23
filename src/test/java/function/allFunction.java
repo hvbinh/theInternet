@@ -70,6 +70,8 @@ public class allFunction {
         click(How.XPATH, "//a[.='Forgot Password']");
         //add f3
 
+        //add f4
+
         
 
 
