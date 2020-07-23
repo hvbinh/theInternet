@@ -68,6 +68,7 @@ public class allFunction {
         backPrevious();*/
 
         click(How.XPATH, "//a[.='Forgot Password']");
+        //add f3
 
         
 
